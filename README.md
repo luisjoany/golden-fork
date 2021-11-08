@@ -74,4 +74,4 @@ Gestionar el proceso Scrum y ayudar a eliminar impedimentos que puedan afectar a
 |  RNF002 |Disponibilidad   |Sistema   |El sistema debe responder las peticiones el 99.3% de las veces.   |
 |  RNF003 |Flexibilidad   |Sistema   |El sistema debe ser flexible ante los nuevos cambios o modificaciones.   |
 |  RNF004 |Facilidad de mantenimiento   |Sistema   |Los componentes deben incluir documentación para facilitar cambios o modificaciones.   |
-
+saludos
