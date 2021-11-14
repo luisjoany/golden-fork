@@ -59,9 +59,9 @@ Gestionar el proceso Scrum y ayudar a eliminar impedimentos que puedan afectar a
 | id requerimiento | Nombre                          | Actores involucrados | Descripcion                                                                                                                                                                                                                      |
 | ---------------- | ------------------------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | RF001            | Registro de usuario             | Cliente              | El potencial usuario debe dirigirse al hipervínculo que indica la creación de una nueva cuenta, diligenciar elformulario con sus respectivos campos obligatorios y proceder a finalizar el proceso pulsando en el botón indicado |
-|  |
+|                  |
 | RF002            | Autentificación                 | Cliente              | El usuario debe diligenciar sus credenciales en los respectivos campos                                                                                                                                                           |
-|  |
+|                  |
 | RF003            | Solicitud de pedido             | Cliente              | El usuario navega en el menú del establecimiento, y escoge su plato                                                                                                                                                              |
 | RF004            | Solicitud de Entrega del pedido | Cliente              | El usuario escoge las diferentes opciones para recibir su pedido, para recoger en el establecimiento, para domicilio.                                                                                                            |
 | RF005            | Pago del pedido                 | Cliente              | El sistema debe permitir el pago en línea por diferentes medios, ya sea con tarjeta de crédito, tarjeta débito, transferencia bancaria                                                                                           |
