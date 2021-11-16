@@ -1,0 +1,8 @@
+Chicos a continuación les comparto algunos comentarios con respecto al sprint 1:
+
+1. Teniendo en cuenta el diagrama de clases, hay cosas que no están muy claras:
+  a. Golden Fork admitirá la gestión de multiples restaurantes en un mismo sistema o Golden Fork se venderá para cada restaurante como sistema independiente? En caso de ser lo segundo, sobraría la entidad Restaurante.
+  b. No es muy claro el objetivo de la entidad pedido dado que por un lado se tienen los datos del cliente pero asimismo hay una entidad aparte de cliente, en ese caso, sería solo una relación al id del cliente.
+  c. Bajo la estructura que se propone de la entidad Pedido, solo un cliente podría pedir una entrada, un plato, una bebida  y un postre, o al menos del mismo tipo, podría pedir diferentes cantidades pero solo sería del mismo. Creo que lo que se quiere plasmar es una estructura de encabezado y detalle, en ese caso, deberían tener una entidad PedidoEncabezado, donde van los datos del cliente, fecha y demás datos generales y por otro lado deberían tener otra entidad como PedidoDetalle donde se relacion el id del PedidoEncabezado y los diferentes productos y cantidades siendo que cada producto mas bien pertenecería a una categoria (otra entidad) que indique si es entrada, plato, bebida o postre.
+
+2. Se evidencian todos los pantallazos de instalación. Super bien por esa parte chicos 👏
