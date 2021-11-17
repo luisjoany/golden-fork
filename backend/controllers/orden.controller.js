@@ -11,7 +11,7 @@ ordenCtrl.createOrden = async(req, res) => {
     const Orden = new orden(req.body);
     await Orden.save();
     res.json({
-        'Status': 'Orden Guardada'
+        'status': 'Orden Guardada'
     });
 
 }
