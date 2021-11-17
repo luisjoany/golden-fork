@@ -12,7 +12,7 @@ app.use(morgan('back'));
 app.use(express.json());
 
 //Routes
-
+app.use('/api', require('./routes/orden.routes'));
 
 
 //star the server
