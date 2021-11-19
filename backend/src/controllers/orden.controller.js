@@ -2,18 +2,28 @@ const ordens = require('../models/orden');
 
 const ordenCtrl = {};
 
-ordenCtrl.getOrdens = async(req, res) => {
+ordenCtrl.getOrdens = async(req, res, next) => {
     const orden = await ordens.find();
     res.json(orden);
 };
 
-ordenCtrl.createOrden = async(req, res) => {
-    const orden = new ordens(req.body);
-    await orden.save();
-    res.json({
-        'status': 'Orden guardada'
+ordenCtrl.createOrden = async(req, res, next) => {
+    const orden = new ordens({
+        name: req.body.name,
+        lastName: req.body.lastName,
+        telephone: req.body.telephone,
+        email: req.body.email,
+        entry: req.body.entry,
+        canEntry: req.body.canEntry,
+        mainCourse: req.body.mainCourse,
+        canMainCourse: req.body.canMainCourse,
+        drink: req.body.drink,
+        canDrink: req.body.canDrink,
+        dessert: req.body.dessert,
+        canDessert: req.body.canDessert
     });
-
+    await orden.save();
+    res.json({ 'status': 'Orden guardada' });
 };
 
 ordenCtrl.getOrden = async(req, res) => {
