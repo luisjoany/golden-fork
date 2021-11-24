@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col s5">
+            <div class="card">
+                <div class="card-content">
+                    <form #ordenForm="ngForm" (ngSubmit)="addOrden()">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input type="text" name="name" #name="ngModel" [ngModel]="name" placeholder="ingresa tu nombre">
+                            </div>
+                            <div class="card-action">
+                                <div class="input-field col s12">
+                                    <button class="btn">Save</button>
+                                    <button class="btn right">limpiar</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
