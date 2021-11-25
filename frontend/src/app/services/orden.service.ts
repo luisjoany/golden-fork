@@ -9,23 +9,24 @@ import { Orden } from '../models/orden';
 export class OrdenService {
 
   selectedOrden: Orden;
-  ordenes!: Orden[];
+  ordenes: Orden[] = [];
+  readonly URL_API = 'http://localhost:3000/api/orden'
 
-  readonly URL_API = 'http://locahost:3000/api/orden'
   constructor(private http: HttpClient) {
     this.selectedOrden = new Orden();
   }
 
-  getOrdenes(){
-    return this.http.get(this.URL_API);
+
+  postOrdenes(orden: Orden){
+    return this.http.post(this.URL_API, orden);
   }
 
-  posOrdenes(orden: Orden){
-    return this.http.post(this.URL_API, orden)
+  getOrdenes(){
+    return this.http.get<Orden[]>(this.URL_API);
   }
 
   putOrdenes(orden: Orden){
-    return this.http.put(this.URL_API + `${orden._id}`, orden);
+    return this.http.put(this.URL_API + `/${orden._id}`, orden);
   }
 
   deleteOrdenes(_id: string){
