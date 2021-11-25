@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "mongose": "^0.0.2-security",
+    "morgan": "^1.10.0"
+  }
+}
