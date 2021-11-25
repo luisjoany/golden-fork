@@ -10,7 +10,7 @@ export class OrdenService {
 
   selectedOrden: Orden;
   ordenes: Orden[] = [];
-  readonly URL_API = 'http://localhost:3000/api/orden'
+  URL_API = 'http://localhost:3000/api/orden'
 
   constructor(private http: HttpClient) {
     this.selectedOrden = new Orden();
