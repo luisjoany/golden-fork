@@ -51,10 +51,9 @@ ordenCtrl.editOrden = async(req, res) => {
     res.json({ status: 'Orden Update' });
 };
 
-ordenCtrl.deleteOrden = async(req, res) => {
-    await ordens.findByIdAndRemove(req.pasrams.id);
-    res.jons({ status: 'orden Deleted' })
-
+ordenCtrl.deleteOrden = async(req, res, next) => {
+    await ordens.findByIdAndRemove(req.params.id);
+    res.json({ status: 'orden Deleted' });
 };
 
 module.exports = ordenCtrl;

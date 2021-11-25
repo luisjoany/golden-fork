@@ -17,14 +17,14 @@ export class OrdenesComponent implements OnInit {
     this.getOrdenes();
   }
 
-  addOrden(form: NgForm){
-    if (form.value._id) {
+  addOrden(form?: NgForm){
+    if (form?.value._id) {
       this.ordenService.putOrdenes(form.value).subscribe((res) => {
         this.resetForm(form);
         this.getOrdenes();
       });
     } else {
-      this.ordenService.putOrdenes(form.value).subscribe((res) => {
+      this.ordenService.putOrdenes(form?.value).subscribe((res) => {
         this.getOrdenes();
         this.resetForm(form);
       });

@@ -4,51 +4,50 @@
             <div class="card">
                 <div class="card-content">
                     <form #ordenForm="ngForm" (ngSubmit)="addOrden(ordenForm)">
-                        <input type="hidden">
-                        <div class="row" name="_id" #_id="ngModel" [(ngModel)]="ordenService.selectedOrden._id">
-                            <div class="input-field col s12">
-                                <input type="text" name="name" #name="ngModel" [(ngModel)]="ordenService.selectedOrden.name" placeholder="Ingres tu nombre">
-                            </div>
-                            <div class="input-field col s12">
-                                <input type="text" lastName="lastName" #lastName="ngModel" [(ngModel)]="ordenService.selectedOrden.lastName" placeholder="Ingres tu apellido">
-                            </div>
-                            <div class="input-field col s12">
-                                <input type="number" telephone="telephone" #telephone="ngModel" [(ngModel)]="ordenService.selectedOrden.telephone" placeholder="telefono">
-                            </div>
-                            <div class="input-field col s12">
-                                <input type="text" email="email" #email="ngModel" [(ngModel)]="ordenService.selectedOrden.email" placeholder="Email">
-                            </div>
-                            <div class="input-field col s12">
-                                <input type="text" entry="entry" #entry="ngModel" [(ngModel)]="ordenService.selectedOrden.entry" placeholder="Entrada">
-                            </div>
-                            <div class="input-field col s12">
-                                <input type="number" canEntry="canEntry" #canEntry="ngModel" [(ngModel)]="ordenService.selectedOrden.canEntry" placeholder="Numero de entradas">
-                            </div>
-                            <div class="input-field col s12">
-                                <input type="text" mainCourse="mainCourse" #mainCourse="ngModel" [(ngModel)]="ordenService.selectedOrden.mainCourse" placeholder="Plato fuerte">
-                            </div>
-                            <div class="input-field col s12">
-                                <input type="number" canMainCourse="canMainCourse" #canMainCourse="ngModel" [(ngModel)]="ordenService.selectedOrden.canMainCourse" placeholder="Numero de platos">
-                            </div>
-                            <div class="input-field col s12">
-                                <input type="text" drink="drink" #drink="ngModel" [(ngModel)]="ordenService.selectedOrden.drink" placeholder="Bebida">
-                            </div>
-                            <div class="input-field col s12">
-                                <input type="number" canDrink="canDrink" #canDrink="ngModel" [(ngModel)]="ordenService.selectedOrden.canDrink" placeholder="Numero de bebidas">
-                            </div>
-                            <div class="input-field col s12">
-                                <input type="text" dessert="dessert" #dessert="ngModel" [(ngModel)]="ordenService.selectedOrden.dessert" placeholder="Postre">
-                            </div>
-                            <div class="input-field col s12">
-                                <input type="number" canDessert="canDessert" #canDessert="ngModel" [(ngModel)]="ordenService.selectedOrden.canDessert" placeholder="Cantidad de Postres">
-                            </div>
-                            <div class="card-action">
-                                <div class="input-field col s12">
-                                    <button class="btn">Save</button>
-                                    <button class="btn right" (click)="resetForm(ordenForm)">limpiar</button>
-                                </div>
 
+
+                        <div class="input-field col s12">
+                            <input type="text" name="name" #name="ngModel" [(ngModel)]="ordenService.selectedOrden.name" placeholder="Ingres tu nombre">
+                        </div>
+                        <div class="input-field col s12">
+                            <input type="text" name="lastName" #name="ngModel" [(ngModel)]="ordenService.selectedOrden.lastName" placeholder="Ingres tu apellido">
+                        </div>
+                        <div class="input-field col s12">
+                            <input type="number" name="telephone" #name="ngModel" [(ngModel)]="ordenService.selectedOrden.telephone" placeholder="telefono">
+                        </div>
+                        <div class="input-field col s12">
+                            <input type="text" name="email" #name="ngModel" [(ngModel)]="ordenService.selectedOrden.email" placeholder="Email">
+                        </div>
+                        <div class="input-field col s12">
+                            <input type="text" name="entry" #name="ngModel" [(ngModel)]="ordenService.selectedOrden.entry" placeholder="Entrada">
+                        </div>
+                        <div class="input-field col s12">
+                            <input type="number" name="canEntry" #name="ngModel" [(ngModel)]="ordenService.selectedOrden.canEntry" placeholder="Numero de entradas">
+                        </div>
+                        <div class="input-field col s12">
+                            <input type="text" name="mainCourse" #name="ngModel" [(ngModel)]="ordenService.selectedOrden.mainCourse" placeholder="Plato fuerte">
+                        </div>
+                        <div class="input-field col s12">
+                            <input type="number" name="canMainCourse" #name="ngModel" [(ngModel)]="ordenService.selectedOrden.canMainCourse" placeholder="Numero de platos">
+                        </div>
+                        <div class="input-field col s12">
+                            <input type="text" name="drink" #name="ngModel" [(ngModel)]="ordenService.selectedOrden.drink" placeholder="Bebida">
+                        </div>
+                        <div class="input-field col s12">
+                            <input type="number" name="canDrink" #name="ngModel" [(ngModel)]="ordenService.selectedOrden.canDrink" placeholder="Numero de bebidas">
+                        </div>
+                        <div class="input-field col s12">
+                            <input type="text" name="dessert" #name="ngModel" [(ngModel)]="ordenService.selectedOrden.dessert" placeholder="Postre">
+                        </div>
+                        <div class="input-field col s12">
+                            <input type="number" name="canDessert" #name="ngModel" [(ngModel)]="ordenService.selectedOrden.canDessert" placeholder="Cantidad de Postres">
+                        </div>
+                        <div class="card-action">
+                            <div class="input-field col s12">
+                                <button class="btn">Save</button>
+                                <button class="btn right" (click)="resetForm(ordenForm)">limpiar</button>
                             </div>
+
                         </div>
                     </form>
 
