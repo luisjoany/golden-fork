@@ -1,6 +1,8 @@
 {
   "dependencies": {
+    "bootstrap": "^5.1.3",
     "cors": "^2.8.5",
+    "jquery": "^3.6.0",
     "mongose": "^0.0.2-security",
     "morgan": "^1.10.0"
   }

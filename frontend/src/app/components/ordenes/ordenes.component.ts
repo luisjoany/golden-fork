@@ -3,6 +3,7 @@ import { NgForm } from '@angular/forms';
 import { Orden } from 'src/app/models/orden';
 import { OrdenService } from '../../services/orden.service';
 
+
 @Component({
   selector: 'app-ordenes',
   templateUrl: './ordenes.component.html',
@@ -10,7 +11,21 @@ import { OrdenService } from '../../services/orden.service';
   providers:[OrdenService],
 })
 export class OrdenesComponent implements OnInit {
-
+  Activedform?:Orden = {
+    _id: '',
+    name: '',
+    lastName: '',
+    telephone: 0,
+    email: '',
+    entry: '',
+    canEntry: 0,
+    mainCourse: '',
+    canMainCourse: 0,
+    drink: '',
+    canDrink: 0,
+    dessert: '',
+    canDessert: 0
+  }
   constructor(public ordenService: OrdenService) { }
 
   ngOnInit(): void {
@@ -18,17 +33,23 @@ export class OrdenesComponent implements OnInit {
   }
 
   addOrden(form?: NgForm){
-    if (form?.value._id) {
-      this.ordenService.putOrdenes(form.value).subscribe((res) => {
+    console.log(this.ordenService.selectedOrden)
+
+    if (this.ordenService.selectedOrden._id) {
+      this.ordenService.putOrdenes(this.ordenService.selectedOrden)
+      .subscribe((res) => {
         this.resetForm(form);
         this.getOrdenes();
       });
     } else {
-      this.ordenService.putOrdenes(form?.value).subscribe((res) => {
+      this.ordenService.postOrdenes(form?.value)
+      .subscribe((res) => {
         this.getOrdenes();
         this.resetForm(form);
+
       });
     }
+
   }
 
   getOrdenes() {
@@ -38,6 +59,7 @@ export class OrdenesComponent implements OnInit {
   }
 
   editOrdenes(orden: Orden) {
+    console.log(orden);
     this.ordenService.selectedOrden = orden;
   }
 
