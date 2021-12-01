@@ -38,3 +38,5 @@ GOLDEN FORK es un aplicativo web que permite visualizar de una manera rapida y s
 - Mensaje de confirmacion de pedido y de pedido listo para entregar
 - Formulario de satisfaccion del servicio
 - Acceso a redes sociales facebook, twiter e instagram
+
+hola compañeros
