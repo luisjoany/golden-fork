@@ -1,36 +1,232 @@
-<link rel="stylesheet" href="/frontend/src/app/app.component.css">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Golden Fork</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">INICIO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">MENU</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">NOSOTROS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">VISION</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">CONTACTENOS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">LOGIN</a>
-                </li>
-
-            </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <div><img src="/assets/img/logo.png" alt=""width="60" height="60" margin="0 auto"></div>
+    <a class="navbar-brand-logo" href="#"></a>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active"href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Menú</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Misión</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" >Contacto</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="px-2 search" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn0" type="submit">Buscar</button>
+      </form>
     </div>
+  </div>
 </nav>
+
+<section class="main">
+  <div class="container py-5">
+    <div class="row py-6">
+      <div class="col-lg-12 pt-2 text-center">
+        <h1 class="pt-1">Bienvenidos a Golden Fork</h1>
+        </div>
+  </div>
+</div>
+</section>
+
+<section class="submenu">
+  <div class="container py-8">
+    <div class="row pt-8">
+      <div class="col-lg-7 m-auto">
+        <div class="row text-center">
+          <div class="col-lg-4">
+            <img src="/assets/img/carnes.png" class="img-fluid" alt="" width="200px" height="200px">
+            <h2>CARNES</h2>
+          </div>
+          <div class="col-lg-4">
+            <img src="/assets/img/platos.png" class="img-fluid" alt="" width="200px" height="200px">
+            <h2>PLATOS</h2>
+          </div>
+          <div class="col-lg-4">
+            <img src="/assets/img/bebidas.png" class="img-fluid" alt="" width="200px" height="200px">
+            <h2>BEBIDAS</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="menus_platos">
+  <div class="container py-5">
+    <div class="row py-5 m-auto text-center">
+      <div class="col-lg-5 m-auto text-center">
+        <h1 class="pt-1">Carnes</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 text-center">
+          <div class="card boder-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="/assets/img/carne-res.png" class="img-fluid" alt=""width="350px" height="350px">
+            </div>
+          </div>
+          <h2>Res</h2>
+          <p>Platos a la carta con con los mejores cortes de res.</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card boder-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="/assets/img/carne-cerdo.png" class="img-fluid" alt=""width="400px" height="400px">
+            </div>
+          </div>
+          <h3>Cerdo</h3>
+          <p>El delicioso sabor del cerdo en todas sus variedades de preparación.</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card boder-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="/assets/img/carne-pollo.png" class="img-fluid" alt=""width="400px" height="400px">
+            </div>
+          </div>
+          <h3>Pollo</h3>
+          <p>Las mejores preparaciones del pollo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="platos-especiales">
+  <div class="container py-5">
+    <div class="row py-5 m-auto text-center">
+      <div class="col-lg-5 m-auto text-center">
+        <h1>Platos especiales</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 text-center">
+          <div class="card boder-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="/assets/img/pastas.png" class="img-fluid" alt=""width="300px" height="300px">
+            </div>
+          </div>
+          <h5>Pastas</h5>
+          <p>Las mejores preparaciones con pastas.</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card boder-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="/assets/img/percados.png" class="img-fluid" alt=""width="300px" height="300px">
+            </div>
+          </div>
+          <h5>Pescados</h5>
+          <p>Pescados en todas su variedades.</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card boder-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="/assets/img/tipicos.png" class="img-fluid" alt=""width="300px" height="300px">
+            </div>
+          </div>
+          <h5>Típicos</h5>
+          <p>Los mejores platos de las diferentes regiones.</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card boder-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="/assets/img/ensaladas.png" class="img-fluid" alt=""width="300px" height="300px">
+            </div>
+          </div>
+          <h5>Ensaladas</h5>
+          <p>Toda la frescura en ensaladas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="platos-especiales">
+  <div class="container py-5">
+    <div class="row py-5 m-auto text-center">
+      <div class="col-lg-5 m-auto text-center">
+      </div>
+      <div class="row">
+        <div class="col-lg-3 text-center">
+          <div class="card boder-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="/assets/img/sopas.png" class="img-fluid" alt=""width="300px" height="300px">
+            </div>
+          </div>
+          <h5>Sopas</h5>
+          <p>Con el sabor de antaño.</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card boder-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="/assets/img/arroces.png" class="img-fluid" alt=""width="300px" height="300px">
+            </div>
+          </div>
+          <h5>Arroces</h5>
+          <p>En toda su variedad y acompañamiento.</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card boder-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="/assets/img/postres.png" class="img-fluid" alt=""width="300px" height="300px">
+            </div>
+          </div>
+          <h5>Postres</h5>
+          <p>Los mejores para disfrutar.</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card boder-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="/assets/img/jugos.png" class="img-fluid" alt=""width="300px" height="300px">
+            </div>
+          </div>
+          <h5>Bebidas</h5>
+          <p>Variedad en jugos, gaseosas y cervezas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="nosotros">
+  <div class="container py-5">
+    <div class="row py-6">
+      <div class="col-lg-10 pt-2 text-center">
+        <h1 class="pt-15">Conoce nuestro gran trabajo.</h1>
+        <p style style="line-height: 30%"></p>
+    </div>
+  </div>
+  <div class="row pt-5">
+    <div class="col-lg-7 m-auto">
+      <div class="row text-center">
+        <div class="col-lg-4">
+          <img src="/assets/img/platopasion.png" class="img-fluid" alt=""width="190px" height="374px">
+          <h1>Platos con mucha Pasión</h1>
+          <h3>Somos un equipo de cheffs...</h3>
+          <h6>Comprometidos con nuestros clientes haciendo los mejores y más deliciosos platos con toda la pasión para entregar un producto gourmet con calidad.</h6>
+        </div>
+        <div class="col-lg-4">
+          <img src="/assets/img/chef.png" class="img-fluid" alt=""width="300px" height="300px">
+          <h1>Nuestra misión</h1>
+          <h6>Llegar con los más exquisitos y variados platos a muchos clientes que buscan comida gourmet.</h6>
+          </div>
+        <div class="col-lg-4">
+          <img src="/assets/img/chefsita.png" class="img-fluid" alt=""width="300px" height="300px">
+          <h1>Nuestra visión</h1>
+          <h6>Posicionarnos en la web, como una de las mejores plataformas de preparaciones gourmet al alcance del público.</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
