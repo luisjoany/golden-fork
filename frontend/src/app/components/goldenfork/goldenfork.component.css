@@ -4,10 +4,13 @@
   box-sizing: border-box;
 }
 .container {
-  padding: 20px;
+  padding: 0%;
   margin-left: 30px;
   height: 100%;
   width: 100%;
+}
+.main-img {
+  margin-left: 1700px;
 }
 .navbar-brand:hover {
   color: black;
@@ -33,11 +36,11 @@
 }
 .btn0 {
   height: 40px;
-  width: 40%;
+  width: 100%;
   outline: none;
   border: none;
   background: rgb(250, 247, 248);
-  color: white;
+  color: rgb(64, 133, 8);
   font-weight: 700;
   border-radius: 60px;
 }
@@ -55,19 +58,8 @@
   font-family: "Lobster", cursive;
   font-size: 5rem;
   font-weight: 700;
-  font-family: Cochin;
   margin-left: 70px;
-  margin-top: 100px;
-}
-.btn1 {
-  height: 45px;
-  width: 35%;
-  outline: none;
-  border: none;
-  background: rgb(26, 104, 248);
-  color: rgb(148, 11, 11);
-  font-weight: 700;
-  border-radius: 60px;
+  margin-top: 20px;
 }
 
 .card:hover {
@@ -76,7 +68,7 @@
   -moz-box-shadow: 6px 6px 8px -2px rgba(0, 0, 0, 0.37);
   transition: 0, 5s;
 }
-.submenu {
+.menu_carnes {
   font-family: Cochin;
   margin-top: 400px;
   box-shadow: 6px 6px 8px -2px rgba(0, 0, 0, 0.37);
@@ -85,15 +77,63 @@
   transition: 0, 5s;
 }
 
-.menus_platos h1 {
-  font-family: "Lobster", cursive;
-  font-size: 5rem;
-  font-weight: 700;
-  font-family: Cochin;
-  margin-left: 170px;
-  padding: 30px;
-}
 .card-body {
   padding: 12px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+.btnmenu_carnes {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  margin-left: 600px;
+  padding: 0px;
+}
+.btnmenu_carnes h1 {
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+  margin-left: 20px;
+}
+.btnmenu_platos {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  margin-left: 600px;
+  padding: 0px;
+}
+.btnmenu_platos h1 {
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+  margin-left: 20px;
+}
+.btnmenu_bebidas {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  margin-left: 600px;
+  padding: 0px;
+}
+.btnmenu_bebidas h1 {
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+  margin-left: 13px;
+}
+
+.nosotros {
+  padding: auto;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.nosotros h1 {
+  padding: auto;
+  margin-top: 120px;
+  margin-bottom: 80px;
+  font-family: "Lobster", cursive;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-left: 90px;
+}
+
+.nosotros h2 {
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 90px;
+  margin-top: 50px;
 }
