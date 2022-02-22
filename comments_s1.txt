@@ -1,0 +1,13 @@
+Chicos a continuación les comparto algunos comentarios con respecto al sprint 1:
+
+1. Chicos si bien, no está mal, si genera ruido, aprecio un montón el esfuerzo puesto en la descrición y justificación pero a la hora de entrar al repositorio, este montón de texto abruma al lector, recuerden, el readme es la carta de presentación de su proyecto, debe ser lo más claro, sencillo, puntual y atractivo posible.
+
+2. Por otro lado, recuerden que el objetivo es de tipo comercial, no debe ser rígido y cuadriculado, para ello, una estrategia sencilla es no comenzar con un verbo en infinitivo como nos enseñaron en la universidad, a cambio, podemos comenzar con el nombre del proyecto, por ejemplo:
+
+"Golden es un aplicativo web que te permite visualizar digitalmente los menús..." y de ahí en adelante toda la "venta" del producto.
+
+3. Al igual que con el objetivo, no debe iniciar con un verbo en infinitivo.
+
+4. No se encuentran los roles del proyecto, quien es el scrum master y quienes son los desarrolladores.
+
+5. NO EXISTEN LOS REQUERIMIENTOS EN SCRUM. Recuerden que alli se debe adjuntar es el product backlog. En caso de no estar muy claro este tema, les sugiero revisar las primeras clases del curso donde explicamos todo este tema.
